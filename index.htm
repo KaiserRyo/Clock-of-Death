@@ -6,20 +6,50 @@
 	    <script src="dist/BlackBerry-JQM-all.min.js"></script>
 		<style type="text/css">
 			h1{
-				font-size: 6em;
+				font-size: 8em;
 				font-family: "Slate Pro",Slate,"Myriad Pro","BBAlpha Sans",Helvetica !important;
 				overflow: hidden;
-				margin-bottom: 3em;
+				margin-bottom: 1em;
 			}
-			.styled
+			h2{
+				font-size: 4em;
+				font-family: "Slate Pro",Slate,"Myriad Pro","BBAlpha Sans",Helvetica !important;
+				overflow: hidden;
+				margin-bottom: 0.5em;
+				color: #EEE;
+			}
+			.styled{
+				width: 90%;
+				font-family: "Slate Pro",Slate,"Myriad Pro","BBAlpha Sans",Helvetica !important;
+				font-weight: bold !important;
+				color: yellow;
+				margin: 1em;
+			}
 		</style>
+		<script type="text/javascript">
+			$('#button1').live('click',function() {
+				$.mobile.changePage( "plainbg.htm", { transition: "flip"} );
+			});
+			$('#button2').live('click',function() {
+				$.mobile.changePage( "appbg.htm", { transition: "flip"} );
+			});
+			$('#plain-bg-page').live('tap',function(event) {
+				$.mobile.changePage( "index.htm", { transition: "flip"} );
+			});
+			$('#app-bg-page').live('tap',function(event) {
+				$.mobile.changePage( "index.htm", { transition: "flip"} );
+			});
+		</script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="a">
 			<div data-role="content">	
-				<h1>Clock of Death</h1>
-				<button class="styled">Button 1</button>
-				<button class="styled">Button 1</button>
+				<center>
+					<h1>Clock of Death</h1>
+					<h2>Pick a screen...</h2>
+					<button class="styled" id="button1">Spinning clock on plain background</button>
+					<button class="styled" id="button2">Spinning clock on mock app</button>
+				</center>
 			</div>
 		</div>
 	</body>
