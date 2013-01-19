@@ -3,7 +3,7 @@
 	<name>Clock of Death</name>
 	<description>This app for BB10 devices pays homage to the familiar spinning clock face that appears on older Blackberry devices when the device is stuck in an app.</description>
 	<author href="https://github.com/karancan">Karan Khiani</author>
-	<icon src="img\icon.png" />
+	<icon src="icon.png" />
 	<rim:orientation mode="potrait"/>
 	<content src="index.htm" />
 	<feature id="blackberry.app" />
