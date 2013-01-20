@@ -6,5 +6,7 @@
 	<icon src="icon.png" />
 	<rim:orientation mode="potrait"/>
 	<content src="index.htm" />
-	<feature id="blackberry.app" />
+	<feature id="blackberry.app">
+		<param name="orientation" value="portrait" />
+	</feature>
 </widget>
